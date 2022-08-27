@@ -1,6 +1,4 @@
-using System;
-
-namespace WebApplication1petshop2.Models
+namespace WebApplication1petshop2.Models.ViewModels
 {
     public class ErrorViewModel
     {

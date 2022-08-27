@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using WebApplication1petshop2.Models;
+using WebApplication1petshop2.Models.ViewModels;
 
 namespace WebApplication1petshop2.Controllers
 {
