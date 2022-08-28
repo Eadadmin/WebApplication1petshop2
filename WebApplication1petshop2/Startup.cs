@@ -37,7 +37,8 @@ namespace WebApplication1petshop2
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<WebApplication1petshop2Context>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("WebApplication1petshop2Context")));
+                   options.UseMySql(Configuration.GetConnectionString("WebApplication1petshop2Context"), builder =>
+                        builder.MigrationsAssembly("WebApplication1petshop2")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
