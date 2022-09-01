@@ -13,6 +13,9 @@ namespace WebApplication1petshop2.Models
         {
         }
 
-        public DbSet<WebApplication1petshop2.Models.Serviços> Serviços { get; set; }
+        
+        public DbSet<Departamento> Departamento { get; set; }
+        public DbSet<Serviços> Serviços { get; set; }
+        public DbSet<VendaRegistro> VendaRegistro { get; set; }
     }
 }

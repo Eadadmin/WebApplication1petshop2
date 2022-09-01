@@ -13,7 +13,7 @@ namespace WebApplication1petshop2.Models
         public DateTime DataNascimento {get; set; }
         public double BaseServiço { get; set; }
         public Departamento Departamento { get; set; }
-        public ICollection<ServiçoRegistro> Serviço { get; set; } = new List<ServiçoRegistro>();
+        public ICollection<VendaRegistro> Vendas { get; set; } = new List<VendaRegistro>();
 
         public Serviços()
         {
@@ -30,19 +30,19 @@ namespace WebApplication1petshop2.Models
 
         }
 
-        public void AddServiços(ServiçosRegistro sr)
+        public void AddVenda(VendaRegistro vr)
         {
-            Serviço.Add(sr);
+            Vendas.Add(vr);
         }
 
-        public void RemoveServiços(ServiçosRegistro sr)
+        public void RemoveVendas(VendaRegistro vr)
         {
-            Serviço.Remove(sr);
+            Vendas.Remove(vr);
         }
 
-        public double TotalServiços(DateTime inicial, DateTime final)
+        public double TotalVendas(DateTime inicial, DateTime final)  
         {
-            return Serviço.Where(sr => sr.Data >= inicial && sr.Data <= final).Sum(sr => sr.Quantidade);
+            return Vendas.Where(vr => vr.Data >= inicial && vr.Data <= final).Sum(vr => vr.Quantidade);
         }
         
         

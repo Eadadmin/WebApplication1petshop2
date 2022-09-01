@@ -28,7 +28,7 @@ namespace WebApplication1petshop2.Models.ViewModels
 
         public double TotalVendas(DateTime inicial, DateTime final)
         {
-            return Serviços.Sum(serviços => serviços.TotalVendas(inicial, final)); 
+            return Serviços.Sum(serviço => serviço.TotalVendas(inicial, final)); 
         }
     }
 }

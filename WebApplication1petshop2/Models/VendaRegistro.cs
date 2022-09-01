@@ -3,7 +3,7 @@ using WebApplication1petshop2.Models.Enums;
 
 namespace WebApplication1petshop2.Models
 {
-    public class ServiçoRegistro
+    public class VendaRegistro
     {
         public int Id { get; set; }
         public DateTime Data { get; set; }
@@ -11,11 +11,11 @@ namespace WebApplication1petshop2.Models
         public VendasStatus Status { get; set; }
         public Serviços Serviços { get; set; }
 
-        public ServiçoRegistro()
+        public VendaRegistro()
         {
         }
 
-        public ServiçoRegistro(int id, DateTime data, double quantidade, VendasStatus status, Serviços serviços)
+        public VendaRegistro(int id, DateTime data, double quantidade, VendasStatus status, Serviços serviços)
         {
             Id = id;
             Data = data;
