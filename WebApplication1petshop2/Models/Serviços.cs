@@ -14,6 +14,7 @@ namespace WebApplication1petshop2.Models
         public double BaseServiço { get; set; }
         public Departamento Departamento { get; set; }
         public ICollection<VendaRegistro> Vendas { get; set; } = new List<VendaRegistro>();
+        public string Name { get; internal set; }
 
         public Serviços()
         {
