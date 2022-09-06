@@ -12,7 +12,6 @@ namespace WebApplication1petshop2.Models
         public string Email { get; set; }
         public DateTime DataNascimento {get; set; }
         public double BaseServiço { get; set; }
-        public Departamento Departamento { get; set; }
         public ICollection<VendaRegistro> Vendas { get; set; } = new List<VendaRegistro>();
         public string Name { get; internal set; }
 
@@ -20,15 +19,14 @@ namespace WebApplication1petshop2.Models
         {
         }
 
-        public Serviços(int id, string nome, string email, DateTime dataNascimento, double baseServiço, Departamento departamento)
+        public Serviços(int id, string nome, string email, DateTime dataNascimento, double baseServiço)
         {
             Id = id;
             Nome = nome;
             Email = email;
             DataNascimento = dataNascimento;
             BaseServiço = baseServiço;
-            Departamento = departamento;
-
+            
         }
 
         public void AddVenda(VendaRegistro vr)
