@@ -12,10 +12,5 @@ namespace WebApplication1petshop2.Models
             : base(options)
         {
         }
-
-        
-       
-        public DbSet<Serviços> Serviços { get; set; }
-        public DbSet<VendaRegistro> VendaRegistro { get; set; }
     }
 }
