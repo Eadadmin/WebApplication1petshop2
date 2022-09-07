@@ -11,11 +11,6 @@ namespace WebApplication1petshop2.Models
         public WebApplication1petshop2Context (DbContextOptions<WebApplication1petshop2Context> options)
             : base(options)
         {
-        }
-
-        
-       
-        public DbSet<Serviços> Serviços { get; set; }
-        public DbSet<VendaRegistro> VendaRegistro { get; set; }
+        }    
     }
 }
